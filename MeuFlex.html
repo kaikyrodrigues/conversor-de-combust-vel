@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Flex</title>
+    <link rel="stylesheet" href="./Css/MeuFlex.css">
+</head>
+<body>
+    <header>
+        <div class="titulo" >
+            <h1>Conversor de combustível</h1>
+        </div>
+    </header>
+    <main>
+        <div class="main">
+
+        </div>
+            <div class="Flex">
+            <label class="sub-titulo">Selecione o tipo de combustível:</label>
+        <div class="combustivel-opcoes">
+        <label for="gasolina">
+            <input  type="radio" name="combustivel" id="gasolina" value="Gasolina"> Gasolina
+        </label>
+        <label for="etanol">
+            <input  type="radio" name="combustivel" id="etanol" value="Etanol"> Etanol
+        </label>
+        <img src="./icons/local_gas_station_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" alt="">
+        </div>
+        </div>
+        <div class="Flex">
+            <label for="">Informe o preço do Combustivel</label>
+            <input type="text" step="0.01" min="0.01" name="preco" id="preco" placeholder="R$ 0,00">
+        </div>
+        <div class="Flex">
+            <label for="">Informe o consumo por litros do seu veiculo</label>
+            <input type="number" name="consumo" id="consumo" placeholder="Km/Litro">
+        </div>
+        <div class="Flex">
+            <label for="">Informe quantos litros deseja abastecer</label>
+            <input type="number" name="qt_litros" id="qt_litros">
+        </div>
+        <div class="botao">
+            <button id="btn_calcular" type="button">Calcular</button>
+            <button id="btn_limpar" type="button">Limpar</button>
+
+        </div>
+        <div class="resultado">
+            <p id="resultado"></p>
+        </div>
+
+    </main>
+    
+    <footer>
+        <div class="footer">
+           
+            <p>&copy; 2025 Conversor de Combustível | Desenvolvido por Kaiky Rosa</p>
+            
+            <div class="footer-icon">
+                <a href="https://github.com/kaikyrodrigues" target="_blank"><img src="./icons/github.png" alt=""></a>
+                <a href="https://www.linkedin.com/in/kaiky-rodrigues-rosa-56602b319/" target="_blank"><img src="./icons/linkedin-logo.png" alt=""></a>           
+            </div>
+            
+            
+            
+            
+        </div>       
+    </footer>
+    <script src="./Script/MeuFlex.js"></script>
+  
+</body>
+</html>
