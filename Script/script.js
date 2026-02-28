@@ -37,7 +37,7 @@ preco.addEventListener("input", ()=>{
     }
     const centavos = valor.slice(-2)
     const reais = valor.slice(0, -2)
-    preco.value = `${parseInt(reais, 10)}, ${centavos}`
+    preco.value = `${parseInt(reais, 10)},${centavos}`
 })
 
 calcular.addEventListener("click",(ev)=>{
@@ -52,7 +52,7 @@ calcular.addEventListener("click",(ev)=>{
         return;
     }
 
-    const valorPreco = parseFloat(preco.value.replace(",", "."))
+    const valorPreco = parseFloat(preco.value.replace(",", ".").trim())
     const valorConsumo = parseFloat(consumo.value)
     const litros = parseFloat(qt_litros.value)
 
